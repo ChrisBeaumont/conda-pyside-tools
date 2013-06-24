@@ -1,0 +1,31 @@
+package:
+  name: pyside-tools
+  version: 0.2.14
+
+source:
+  fn: pyside-tools-0.2.14.tar.bz2                  [unix]
+  md5: 0a683e1dc426df5834cb1e540d0c6e3f            [unix]
+  url: http://qt-project.org/uploads/pyside/pyside-tools-0.2.14.tar.bz2
+
+build:
+  number: 1     [osx]
+
+requirements:
+  build:
+    - cmake     [unix]
+    - qt        [unix]
+    - libpng    [linux]
+    - shiboken  [unix]
+    - pyside    [unix]
+    - python
+  run:
+    - qt        [unix]
+    - shiboken  [unix]
+    - libpng    [linux]
+    - pyside    [unix]
+    - python
+    - python.app  [osx]
+
+about:
+  home: https://pypi.python.org/pypi/PySide
+  license: LGPL
