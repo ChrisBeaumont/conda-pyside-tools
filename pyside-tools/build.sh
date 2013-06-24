@@ -11,7 +11,7 @@ cmake \
     -DLIB_INSTALL_DIR=$PREFIX/lib \
     -DShiboken_DIR=$PREFIX \
     -DPySide_DIR=$PREFIX \
-    -DQT_MOC_EXECUTABLE=/usr/bin/moc \  #hack -- these aren't in anaconda yet
+    -DQT_MOC_EXECUTABLE=/usr/bin/moc \
     -DQT_RCC_EXECUTABLE=/usr/bin/rcc \
     -DQT_UIC_EXECUTABLE=/usr/bin/uic \
     ..
